@@ -88,6 +88,16 @@ const config: Config = {
         mobileNavText: ['14px', {
           letterSpacing: '2.36px',
         }],
+      },
+      keyframes: {
+        openMenu: {
+          '0%': { opacity: '0' },
+          '50%': { opacity: '0.5' },
+          '100%': {opacity: '1'},
+        }
+      },
+      animation: {
+        openMenu: 'openMenu 0.5s ease-in-out',
       }
     },
   },
