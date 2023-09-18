@@ -1,15 +1,15 @@
 import Image from 'next/image'
 import React from 'react'
-import heroLarge from '../../../public/images/heroLarge.jpg'
-import heroMedium from '../../../public/images/heroMedium.jpg'
-import heroSmall from '../../../public/images/heroSmall.jpg'
+import heroLarge from '@/public/images/heroLarge.jpg'
+import heroMedium from '@/public/images/heroMedium.jpg'
+import heroSmall from '@/public/images/heroSmall.jpg'
 import HomeButton from './HomeButton/HomeButton'
 
 export default function Home() {
   return (
     <section className='relative 
     h-[100dvh] min-h-[667px] md:min-h-[1024px] lg:min-h-[900px]
-    w-[100dvw] min-w-[375px] 
+    w-full min-w-[375px] 
     flex flex-col'>
       <Image
         alt="Background image"
