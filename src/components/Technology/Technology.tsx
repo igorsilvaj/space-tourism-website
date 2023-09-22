@@ -83,7 +83,8 @@ export default function Technology() {
                       text-mobileHeading4 md:text-tabletHeading4 lg:text-Heading4 md:tracking-[1.5px] lg:tracking-[2px]
                       flex items-center justify-center
                       cursor-pointer border-primary border-[1px] border-opacity-25 rounded-full
-                      h-10 w-10 md:h-[60px] md:w-[60px] lg:h-20 lg:w-20`}>
+                      h-10 w-10 md:h-[60px] md:w-[60px] lg:h-20 lg:w-20
+                      hover:border-opacity-100`}>
                     {index + 1}
                   </li>
                 ))}
