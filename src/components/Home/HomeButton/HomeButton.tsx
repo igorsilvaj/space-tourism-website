@@ -1,3 +1,6 @@
+"use client"
+
+import { scrollToElement } from '@/utils/scroll'
 import React from 'react'
 
 export default function HomeButton() {
@@ -9,8 +12,9 @@ export default function HomeButton() {
     text-mobileButtonText md:text-tabletButtonText lg:text-buttonText
     bg-white
     text-tertiary
-    z-10
-    '>
+    z-10'
+      onClick={() => { scrollToElement('destination') }}
+    >
       <span>EXPLORE</span>
       <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
       w-full h-full rounded-full bg-primary opacity-10 group-hover:scale-150

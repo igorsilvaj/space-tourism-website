@@ -1,43 +1,44 @@
 import Image from 'next/image'
 import React from 'react'
-import heroLarge from '@/public/images/heroLarge.jpg'
-import heroMedium from '@/public/images/heroMedium.jpg'
-import heroSmall from '@/public/images/heroSmall.jpg'
+import bgMobile from '@/public/assets/home/background-home-mobile.jpg'
+import bgTablet from '@/public/assets/home/background-home-tablet.jpg'
+import bgDesktop from '@/public/assets/home/background-home-desktop.jpg'
 import HomeButton from './HomeButton/HomeButton'
 
 export default function Home() {
   return (
-    <section className='relative 
+    <section id="home" className='relative
     h-[100dvh] min-h-[667px] md:min-h-[1024px] lg:min-h-[900px]
     w-full min-w-[375px] 
     flex flex-col'>
       <Image
         alt="Background image"
-        src={heroSmall}
+        src={bgMobile}
         placeholder="blur"
         quality={100}
+        sizes="100dvw"
         fill
-        sizes="100vw"
         className='-z-50 md:hidden object-cover object-center '
       />
       <Image
         alt="Background image"
-        src={heroMedium}
+        src={bgTablet}
         placeholder="blur"
         quality={100}
+        sizes="100dvw"
         fill
-        sizes="100vw"
         className='-z-50 hidden md:block lg:hidden object-cover'
       />
       <Image
         alt="Background image"
-        src={heroLarge}
+        src={bgDesktop}
         placeholder="blur"
         quality={100}
+        sizes="100dvw"
         fill
-        sizes="100vw"
         className='-z-50 hidden lg:block object-cover'
       />
+
       <div className='flex
       items-center lg:items-end
       flex-col lg:flex-row
